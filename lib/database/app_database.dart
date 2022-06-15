@@ -1,7 +1,7 @@
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 
-import '../../database/database.dart';
+import '../database/database.dart';
 
 Future<Database> getDatabase() async {
   final String path = join(await getDatabasesPath(), 'bytebank.db');
